@@ -1,0 +1,13 @@
+version: '3'
+services:
+  notebook:
+    container_name: notebook
+    labels:
+      description: Jupyter Notebook for Lending Analysis Models
+      name: notebook
+    ports:
+      - "8888:8888"
+    volumes:
+      - ./jupyter_notebooks:/usr/src/app/jupyter_notebooks
+      - ./data:/usr/src/app/data
+    build: .
