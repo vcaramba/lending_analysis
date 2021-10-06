@@ -10,4 +10,5 @@ services:
     volumes:
       - ./jupyter_notebooks:/usr/src/app/jupyter_notebooks
       - ./data:/usr/src/app/data
+      - ./helper_scripts:/usr/src/app/helper_scripts
     build: .
